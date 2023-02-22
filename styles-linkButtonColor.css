@@ -1,0 +1,15 @@
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+
+  /** This is effectively the coloring link to that of a button BUT IS NOT the colloring of the button element like javascrypt. 
+  /** This seemed to only work within the styles element secton and not as a css page link 

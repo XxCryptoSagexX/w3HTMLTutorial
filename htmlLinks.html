@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Links</title>
+    <!--<link rel="stylesheet-LinksColors" href="styles-linkColors.css"> -->
+    <link rel="stylesheet-linkButtonColor" href="styles-linkButtonColor.css">
+    <style>
+        a:link, a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        }
+        
+        a:hover, a:active {
+        background-color: red;
+        }
+    </style>
+</head>
+<body>
+     <!-- This explains how the bookmark feature works"
+    
+        1. Create ID tag in element.
+        2. Reference tag like so.
+    -->
+    <p><a href="#Title">Title</a></p>
+    <a href="#Section 1">Section 1 </a>
+    <a href="#Section 2">Section 2 </a>
+    <a href="#Section 3">Section 3 </a>
+    <a href="#Section 4">Section 4 </a>
+    <a href="#Section 5">Section 5 </a>
+    <a href="#Section 6">Section 6 </a>
+    <a href="#Section 7">Section 7 </a>
+    <a href="#Section 8">Section 8 </a>
+<hr>
+   
+    <h1 id="Title">HTML Links</h1>
+    <img src="targetAttribute.png" alt="Target Attribute Photo" style="border: 3px solid black; display: block; margin: auto;" class="center">
+    <p><a href="https://www.w3schools.com/">Visit W3Schools.com!</a></p> <!--link will change page.-->
+<hr>
+    <h2 id="Section 1">The target Attribute</h2>
+    <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>   <!--link will open in new tab.-->
+    <p>If target="_blank", the link will open in a new browser window or tab.</p>
+<hr>
+    <h2 id="Section 2">Absolute URLs</h2>
+    <p><a href="https://www.w3.org/">W3C</a></p>
+    <p><a href="https://www.google.com/">Google</a></p>
+
+    <h2 id="Section 3">Relative URLs</h2>
+    <p><a href="colorNames.png">Color Images - Photo Link</a></p>
+    <p><a href="index.html">Index - Page Link</a></p>
+    <p>This is effectively going to X page within the directory</p>
+<hr>
+    <h2 id="Section 4">Image as a Link</h2>
+    <p>The image below is a link. Try to click on it.</p>
+    <a href="https://www.ibm.com">
+        <img src="ibmLogo.jpeg" alt="IBM Website" style="width: 100px;height: 100px; border: 3px solid black; display: block;" >
+    </a>
+<hr>
+    <h2 id="Section 5">Link to an Email Address</h2>
+    <p>To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:</p>
+    <p><a href="mailto:someone@example.com">Send email</a></p>
+<hr>
+    <h2 id="Section 6">Button as a Links</h2>
+    <p>Click the button to go to the IBM Logo.</p>
+    <button onclick="document.location='ibmLogo.jpeg'">Image</button> <!-- Seems to create a button for internal page or file.-->
+    <button onclick="document.location='htmlColors.html'">Colors Button</button> <!--Did not work for external links with original attempt.-->
+<hr>
+    <h2 id="Section 7">Link Titles</h2>
+    <p>The title attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+    <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+    <!--Note that the title is not the same as the preview section of the browser when going to a link.-->
+<hr>
+    <h2 id="Section 8">Link Style Removal: Underline</h2>
+    <a href="htmlColors.html" style="text-decoration: none;">HTML Images</a> 
+</body>
+</html>
+    
