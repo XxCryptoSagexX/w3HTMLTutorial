@@ -5,21 +5,24 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <style>
         table {
-            border: 3px solid white;
-            border-collapse: collapse; /* Consolidates Border to 1 */
+            border: 3px solid black;
             border-radius: 10px; /* Creates a curved border */
+            background-color: black;
         }
         th ,td {
 
-            border: 3px solid white;
+            border: 3px solid black;
             border-collapse: collapse; /* Consolidates Border to 1 */
-            background-color: lightblue;
+            background-color: lightblue; /* Change the colro of the border Border to 1 */
             border-radius: 10px; /* Creates a curved border */
+            border-color: lightcoral;
+            border-style: dashed;
+
         }
         
     </style>
 </head>
-<body style="background-color: white;">
+<body style="background-color: lightblue;">
     <h1 style="font-size: 300%; color: green; text-align: center;">Tables</h1>
 
     <h2>Basic Table: Example 1 </h2>
@@ -111,9 +114,31 @@
     <h2>Table: Border Styles</h2>
     <p>Use the CSS border-radius property to add rounded corners to the table cells.</p>
     <img src="images/dottedTableValues.png" alt="Border Style Values" title="Border Values" style="border: 3px solid black; display: block; margin: auto;" class="center">
-
-
-
-
+<hr>
+    <h2>Table: Border Color</h2>
+    <p>Use the CSS border-color property to set the color of the borders</p>
+    <table style="width: 100%;">
+        <caption><em>Table with colored boarder</em></caption>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>80</td>
+        </tr>
+    </table>
 </body>
 </html>
