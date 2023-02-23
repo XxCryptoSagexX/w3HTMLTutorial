@@ -2,31 +2,72 @@
 <html lang="en-US">
 <head>
     <title>Images</title>
-    <style>
-        img {
-          width: 100%;
-        }
-    </style>
-
 </head>
 <body>   
-<h2>Width/Height Attributes or Style?</h2>
-<p>The first image uses the width attribute (set to 128 pixels), but the style in the head section overrides it, and sets the width to 100%.</p>
-<img src="stockphotos/meditation.jpg" alt="Meditation Photo" width="128" height="128">
-<p>The second image uses the style attribute to set the width to 128 pixels, this will not be overridden by the style in the head section:</p>    
-<img src="ibmLogo.jpeg" alt="IBM Logo Icon" style="width:128px; height:128px;">
+  <h2>Width/Height Attributes or Style?</h2>
+  <p>The first image uses the width attribute (set to 128 pixels), but the style in the head section overrides it, and sets the width to 100%.</p>
+  <img src="stockphotos/meditation.jpg" alt="Meditation Photo" width="128" height="128">
+  <p>The second image uses the style attribute to set the width to 128 pixels, this will not be overridden by the style in the head section:</p>    
+  <img src="ibmLogo.jpeg" alt="IBM Logo Icon" style="width:128px; height:128px;">
 <hr>
-<h2>Images in Another Folder</h2>
-<p>This photo came from the stockphotos Folder</p>
-<img src="stockphotos/meditation2.png" alt="Meditaton Photo 4" style="width:128px; height:128px;">
-<p>This photo came from the people folder</p>
-<img src="stockphotos/people/thechad.jpg" alt="The Chad" style="width: 483px; height: 542px;" title="The Goat: Chad">
-<br>
-<img src="stockphotos/people/thechad.jpg" alt="The Chad" style="width:auto; height: auto;" title="The Goat: Chad">
+  <h2>Images in Another Folder</h2>
+  <p>This photo came from the stockphotos Folder</p>
+  <img src="stockphotos/meditation2.png" alt="Meditaton Photo 4" style="width:128px; height:128px;">
+  <p>This photo came from the people folder</p>
+  <img src="stockphotos/people/thechad.jpg" alt="The Chad" style="width: 483px; height: 542px;" title="The Goat: Chad">
 <hr>
-<h2>Images from Another Server</h2>
-<p>This image came from the W3 School Server.</p>
-<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3 Schools" style="width:104px; height:142px;">
+  <h2>Images from Another Server</h2>
+  <p>This image came from the W3 School Server.</p>
+  <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3 Schools" style="width:104px; height:142px;">
+<hr>
+  <h2>Animated Images</h2>
+  <p>HTML allows moving images:</p>
+  <img src="stockphotos/gifs/programming.gif" alt="Computer man" style="width:48px;height:48px;">
+<hr>
+  <h2>Image as a Link</h2>
+  <p>The image is a link. You can click on it. -> Google.com (NEWTAB)</p>
+  <a href="https://www.google.com" target="_blank">
+    <img src="stockphotos/gifs/smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+  </a>
+<hr>
+  <h2>Floating Images</h2>
+  <p><strong>Float the image to the right:</strong></p>
+  
+  <p>
+    <img src="stockphotos/gifs/smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+    A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+  </p>
+  <br>
+  <p><strong>Float the image to the left:</strong></p>
+  <p>
+  <img src="stockphotos/gifs/smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;">
+  A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.  
+  </p>
+  <br>
+<hr>
+  <h2>Image Maps</h2>
+  <p>Click on the computer, the phone, or the cup of coffee to go to a new page.</p>
+  <img src="stockphotos/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+  <map name="workmap">
+    <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.bestbuy.com" title="Computer-Bestbuy">
+    <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.att.com" title="Phone-At&t">
+    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.starbucks.com" title="Coffee-Starbucks">
+  </map>
+<hr>
+  <h2>Image Maps Scripting</h2>
+  <p>Click on the cup of coffee to execute a JavaScript function:</p>
+  <img src="stockphotos/workplace.jpg" alt="Workplace2" usemap="#workmap2" width="400" height="379" title="Coffee-Starbucks">
+  <map name="workmap2">
+    <area shape="circle" coords="337,300,44" href="https://www.starbucks.com" target="_blank" onclick="myFunction()">
+  </map>
+<script>
+  function myFunction() {
+    alert('You clicked the coffee cup! Taking you to "starbucks.com"');
+  }
+</script>
+
+
+
 
 
 
