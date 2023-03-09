@@ -7,13 +7,13 @@
         table {
             border: 3px solid black;
             border-radius: 10px; /* Creates a curved border */
-            background-color: black;
+            /*background-color: black;*/
         }
         th ,td {
 
             border: 3px solid black;
             border-collapse: collapse; /* Consolidates Border to 1 */
-            background-color: lightblue; /* Change the colro of the border Border to 1 */
+            /* background-color: lightblue;  Change the colro of the border Border to 1 */
             border-radius: 10px; /* Creates a curved border */
             border-color: lightcoral;
             border-style: dashed;
@@ -21,9 +21,17 @@
         th {
             text-align: left; /* Just shows how to move the text */
         }
+
+        /* tr:nth-child(even) {
+             background-color: #a5fafa;
+            This causes the even numbers to be a specific color within the table 
+        }*/
+
+        tr:hover {background-color: olivedrab;
+        }
     </style>
 </head>
-<body style="background-color: lightblue;">
+<body>
     <h1 style="font-size: 300%; color: green; text-align: center;">Tables</h1>
 
     <h2>Basic Table: Example 1 </h2>
@@ -190,24 +198,448 @@
 <hr>
 <h2>A header that spans two columns</h2>
 <p>Use the colspan attribute to have a header span over multiple columns.</p>
+    <table style="width:100%">
+        <caption>Note that the caption element goes directly after table opening element</caption>
+    <tr>
+        <th style="text-align: center;" colspan="2">Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    </table>
+<hr>
+    <h2>Cell that spans two rows</h2>
+    <p>To make a cell span more than one row, use the rowspan attribute.</p>
+    <table style="width:100%">
+    <tr>
+        <th>Name</th>
+        <td>Jill</td>
+    </tr>
+    <tr>
+        <th rowspan="2">Phone</th>
+        <td>555-1234</td>
+    </tr>
+    <tr>
+        <td>555-8745</td>
+    </tr>
+    </table>
+<hr>
+    <h2>Zebra Striped Table</h2>
+    <p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+    <table>
+    <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Points</th>
+    </tr>
+    <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+    </tr>
+    <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+    </tr>
+    <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+    </tr>
+    <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+    </tr>
+    </table>
+<hr>
+<h2>Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+<!-- 
+You would need to add the following style to allow for every other coloum (even) to be highlighted 
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: #D6EEEE;
+}
+-->
 <table style="width:100%">
-    <caption>Note that the caption element goes directly after table opening element</caption>
   <tr>
-    <th style="text-align: center;" colspan="2">Name</th>
-    <th>Age</th>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
   </tr>
   <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
   </tr>
   <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
   </tr>
 </table>
 
+<h2>Striped Table</h2>
+<p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+
+<!--
+ This effectively creates both ROW and COLOUM Highliging similar to outlooks themes. Even ROWS and EVEN COLUMS are used for this style example
+
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+-->
+<table style="width:100%">
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+    <td> </td>
+  </tr>
+</table>
+<hr>
+    <h2>Hoverable Table</h2>
+    <p>Move the mouse over the table rows to see the effect.</p>
+    <!--
+
+        Note this is implemented for the entire page.
+    -->
+    <table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+    </tr>
+    <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+        <td>$150</td>
+    </tr>
+    <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+        <td>$300</td>
+    </tr>
+    <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+        <td>$250</td>
+    </tr>
+    </table>
+<hr>
+    <h2>Colgroup</h2>
+    <p>Add the a colgroup with a col element that spans over two columns to define a style for the two columns:</p>
+    <!-- note that this does not conflict with Style element-->
+    <table style="width: 100%;">
+    <colgroup>
+    <col span="2" style="background-color: #8ef5f5">
+    </colgroup>
+    <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    </tr>
+    <tr>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+    </tr>
+    <tr>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    <td>21</td>
+    </tr>
+    <tr>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td>28</td>
+    </tr>
+    </table>
+    <img src="images/legalcssproperties.png" alt="Legal CSS Propeties" style="width: 887px; height: 295; border:3px solid black;display: block; margin: auto;" class="center">
+    <br>
+    <br>
+    <h2>Multiple Col Elements</h2>
+    <p>Add multiple col elements in the colgroup:</p>
+
+    <table style="width: 100%;">
+    <colgroup>
+    <col span="2" style="background-color: #8ef5f5">
+    <col span="3" style="background-color: pink">
+    <col span="2" style="background-color: rgb(180, 180, 247)">
+    </colgroup>
+    <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    </tr>
+    <tr>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+    </tr>
+    <tr>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    <td>21</td>
+    </tr>
+    <tr>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td>28</td>
+    </tr>
+    </table>
+<hr>
+    <h2>Empty Colgroups</h2>
+    <p>Add "empty" col elements that represents the columns before the columns you want to style:</p>
+    <table style="width: 100%;">
+    <colgroup>
+    <col span="2">
+    <col span="3" style="background-color:rgb(180, 180, 247)">
+    </colgroup>
+    <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    </tr>
+    <tr>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+    </tr>
+    <tr>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    <td>21</td>
+    </tr>
+    <tr>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td>28</td>
+    </tr>
+    </table>
+<hr>
+    <h2>Hide Columns</h2>
+    <p>You can hide specific columns with the visibility property:</p>
+    <p>As we all know... Lunes does not exist.</p>
+
+    <table style="width: 100%;">
+    <colgroup>
+        <col span="1" style="visibility: collapse">
+    </colgroup>
+    <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+    </tr>
+    <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+    </tr>
+    <tr>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+    </tr>
+    <tr>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td>19</td>
+    <td>20</td>
+    <td>21</td>
+    </tr>
+    <tr>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+    <td>28</td>
+    </tr>
+    </table>
+
+    <p><b>Note:</b> The table columns does not collapse properly in Safari browsers.</p>
 
 </body>
 </html>
