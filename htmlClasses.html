@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>HTML class Attribute</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        /* Notice that these are Classes and can be used with javascript. */
+        .city {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+        .note {
+            font-size: 120%;
+            color: red;
+        }
+        .city2 {
+            background-color: dodgerblue;
+            color: white;
+            padding: 10px;
+        }
+        .main {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 300%; color: green; text-align: center;">HTML class Attribute</h1>
+<br>
+<br>
+    <h3>Using The class Attribute</h3>
+    <div class="city">
+        <h4>London</h4>
+        <p>London is the capital of England.</p>
+    </div>
+    <div class="city">
+        <h4> Paris</h4>
+        <p>Paris is the captial of France.</p>
+    </div>
+    <div class="city">
+        <h4>Tokyo</h4>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+<br>
+    <h3>Using The class Attribue - Utilization of SPAN and CLASS</h3>
+    <h4>My <span class="note"> Important</span> Heading</h4>
+    <p>This is some <span class="note">important</span> text</p>
+<br>
+    <h3>Syntax for Classes</h3>
+    <!--
+        • Note that they use "." followed by class name then define CSS properties within curly braces {}
+        • Note that classes are case sensitive.
+    -->
+    <h4> The class attribute</h4>
+    <p>Use CSS to style elements with the class name "city2"</p>
+
+    <h4 class="city2">London</h4>
+    <p>London is the capital of England.</p>
+
+    <h4 class="city2">Paris</h4>
+    <p>Paris is the capital of France.</p>
+
+    <h4 class="city2">Tokyo</h4>
+    <p>Tokyo is the capital of Japan.</p>
+<br>
+    <h3>Mutiple Classes</h3>
+    <p>Here, all three h4 elements belong to the "city2" class. In addition, Tokyo also belongs to the "main" class, which will center-align the text.</p>
+    <h4 class="city2">London</h4>
+    <h4 class="city2">Paris</h4>
+    <h4 class="city2 main">Tokyo</h4>
+<br>
+    <h3>Different Elements Sharing The Same Class</h3>
+    <h4>Class Sharing</h4>
+    <p>Even if the two elements do not have the same tag name, they can both point to the same class, and get the same CSS styling:</p>
+    <h4 class="city2 main">Tokyo</h4>
+    <p class="city2">Tokyo is the capital of Japan</p>
+<br>
+    <h3>Use of The class Attribute in JavaScript</h3>
+    <p>Click the buttion to hide all elements with the class name "city2":</p>
+    
+    <button onclick="myFunction()"> Hide Elements</button>
+     
+    <h4 class="city2">London</h4>
+    <p>London is the capital of England.</p>
+
+    <h4 class="city2">Paris</h4>
+    <p>Paris is the capital of France.</p>
+
+    <h4 class="city2">Tokyo</h4>
+    <p>Tokyo is the capital of Japan.</p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("city2");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+<!-- 
+    • Note that this shows that you can use JavaScript to control the browser or affect aspects of the page with the language.
+-->
+</body>
+</html>

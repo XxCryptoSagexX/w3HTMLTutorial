@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>HTML Iframes</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <h1 style="font-size: 300%; color: green; text-align: center;">HTML Iframes</h1>
+<br>
+    <p>TOC GOES HERE</p>
+<br>
+    <h3 id="Section 1">HTML Iframe Syntax</h3>
+    <img src="images/iframeSyntax.png" alt="HTML Iframe Syntaxt" style="width: 989px;height: 264px; border: 3px solid black; display: block; margin: auto;" class="center">
+<br> 
+    <h3 id="Section 2">Iframe - Set Height and Width</h3>
+    <h4>HTML Iframes</h4>
+    
+    <p>You can use the height and width attributes to specify the size of the iframe:</p>
+    <iframe src="htmlNoContent.html" height="200" width="400" frameborder="0" title="HTML CLass Attribute"></iframe>
+
+    <p>You can also use the CSS height and width properties to specify the size of the iframe:</p>
+    <iframe src="htmlNoContent.html" style="height: 200px;width: 400px;" frameborder="0" title="HTML Colors"></iframe>
+
+    <h3 id="Section 3">Iframe -Remove the Border </h3>
+    <h4>Remove the Iframe Border</h4>
+    <p>To removed the default border of the iframe, use CSS:</p>
+    <iframe src="htmlNoContent.html" style="border:none" title="Iframe Border Removal" frameborder="0"></iframe>
+
+    <h4>Custom Iframe Border</h4>
+    <p>With CSS, you can also change the size, style and color of the iframe's border</p>
+    <iframe src="htmlNoContent.html" style="border: 2px solid red" title="Custome Iframe Border" frameborder="0"></iframe>
+<br>
+    <h3 id="Section 4"> Iframe - Target for a Link</h3>
+    <iframe src="htmlNoContent.html" name="iframe_a" height="300px" width="100%" title="Iframe Example" frameborder="0"></iframe>
+
+    <p><a href="https://www.google.com" target="iframe_a">Google.com</a></p>
+
+    <p> When the target attribute of a link matches the name of the iframe, the link will open in the iframe</p>
+</body>
+</html>
