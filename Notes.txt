@@ -1,0 +1,9 @@
+Modules:
+    HTML
+        Chapters
+            Chapter x: Colors
+                Lesson 1: SAME AS Chapter
+                Lessin 2: RGB
+    CSS
+    JavaScript
+

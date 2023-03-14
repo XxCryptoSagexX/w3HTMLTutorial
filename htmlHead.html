@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!--
+        • Added each element within Head For Eample
+    -->
+    <title>HTML Head Element</title>
+    <style>
+        body { background-color: powderblue; }
+        p {color: rgb(90, 90, 244)}
+        h3 {font-style: bold;}
+    </style>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="author" content="Tre Williams">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width", initial-scale="1.0">
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        }
+    </script>
+    <base href="https://www.w3schools.com/" target="_blank">
+</head>
+<body>
+    <h1 style="font-size: 300%; color: green; text-align: center;">HTML Head Element</h1>
+<br>
+    <p>
+        TOC Goes Here
+    </p>
+<br>
+    <h3 id="Secton 1">The HTML head Element</h3>
+    <img src="images/htmlHeadElement.png" alt="The Head Element" style="width: 668px;height: 392px; border: 3px solid black; display: block; margin: auto;" class="center">
+<br>
+    <h3 id="Section 2">Setting The Viewport</h3>
+    <img src="images/settingViewport.png" alt="Setting The Viewport" style="width: 975px;height: 268px; border: 3px solid black; display: block; margin: auto;" class="center">
+<br>
+    <h3 id="Section 3">The HTML script Element</h3>
+    <p id="demo">A paragraph</p>
+    <button type="buttion" onclick="myFunction()"> Click Me - I use JavaScript</button>
+<br>
+    <h3 id="Section 4"> the HTML base Element</h3>
+    <p>
+        <img src="images/stickman.gif" alt="Stickman" width="24" height="39"> - Notice that we have only specified a relative address for the image. Since we have specified a base URL in the head section, the browser will look for the image at "https://www.w3schools.com/images/stickman.gif".
+    </p>
+    <p>
+        <a href="tags/tag_base.asp">HTML Base Tag</a> - Notice that the link opens in a new window, even if it has no target="_blank" attribute. This is because the target attribute of the base element is set to "_blank".</p>
+    </p>
+</body>
+</html>

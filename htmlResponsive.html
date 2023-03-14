@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!--
+        • Added each element within Head For Eample
+    -->
+    <title>HTML Responsive Web Design</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="author" content="Tre Williams">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width", initial-scale="1.0">
+</head>
+<body>
+    <h1 style="font-size: 300%; color: green; text-align: center;">HTML Responsive Web Design</h1>
+<br>
+    <p>
+        TOC Goes Here
+    </p>
+<br>
+    <h3 id="Secton 1">Responsive Images</h3>
+    <p>Responsive images are images that scale nicely to fit any browser size</p>
+    <h4 id="Section 1-1">Using the width Property</h4>
+    <p>
+        When the CSS width property is set in a percentage value, the image will scale up and down when resizing the browser window. Resize the browser window to see the effect
+        <br>
+        If the css <span style="color: red">width</span> property is set to 100% the image will be responsive and scall up and down:
+    </p>
+    <img src="images/stockphotos/img_girl.jpg" alt="Stock Woman Photo" style="width: 100%">
+    <br>
+    <h4 id="Section 1-2">Using the max-width Property</h4>
+    <p>If the <span style="color: red">max-width</span> property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:</p>
+    <img src="images/stockphotos/img_girl.jpg" alt="Stock Woman Photo" style="max-width: 100%;height: auto;">
+    <br>
+    <h4 id="Section 1-3">Showing Different Images Depending on Browser Width</h4>
+    <p>Resize the browser width and the image will change at 600px and 1500px</p>
+    <picture>
+        <source srcset="images/stockphotos/img_smallflower.jpg" media="(max-width: 600px)">
+        <source srcset="images/stockphotos/img_flowers.jpg" media="(max-width: 1500px)">
+        <source srcset="images/stockphotos/flowers.jpg">
+        <img src="/images/stockphotos/img_flowers.jpg" alt="Flowers" style="width:auto">
+    </picture>
+<br>
+    <h3 id="Section 2" style="font-size:10vw"> Responsive Text Size</h3>
+    <p style="font-size:5vw;">Resize the browser window to see how the text size scales.</p>
+    <p style="font-size:5vw;">Use the "vw" unit when sizing the text. 10vw will set the size to 10% of the viewport width.</p>
+    <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+<br>
+    <h3 id="Section 4">Media Queries</h3>
+    <p>
+        In addition to resize text and images, it is also common to use media queries in responsive web pages.
+        With media queries you can define completely different styles for different browser sizes.
+        Example: resize the browser window to see that the three div elements below will display horizontally on large screens and stack vertically on small screens:
+        <ul style="list-style-type: square;">
+            <li><a href="examples/mediaQueries.html" target="_blank">Media Queries Example</a></li>
+        </ul>
+    </p>
+<br>
+    <h3 id="Section 5"> Responsive Web Page - Full Example</h3>
+    <p>
+        A responsive web page should look good on large desktops screens and on small mobile phones.
+        <ul>
+            <li><a href="examples/fullResponsiveWebPage.html"target="_blank">Responsive Web Page Example</a></li>
+        </ul>
+    </p>
+<br>
+    <h3 id="Section 6">Responsive Web Design - Frame Works</h3>
+    <p>
+        Click on the following links to see these frameworks in action.
+        <ul>
+            <li><a href="examples/frameworkW3CSS.html" target="_blank">W3.CSS Framework</a></li>
+            <li><a href="examples/frameworkBootstrap.html"target="_blank">Bootstrap Framework</a></li>
+        </ul>
+    </p>
+
+
+
+
+
+
+    
+</body>
+</html>

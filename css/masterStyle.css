@@ -1,0 +1,22 @@
+h1 {
+    font-size: 300%;
+    color: green;
+    text-align: center;
+    }
+h3 {
+    text-decoration: underline;
+}
+body {
+    background-color: powderblue;
+}
+img {
+    border: 3px solid black;
+}
+dt {
+    font-weight: bold ;
+}
+.element {
+    color: crimson;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
