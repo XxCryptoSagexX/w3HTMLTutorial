@@ -8,19 +8,27 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width", initial-scale="1.0">
+</head>
 <body>
-    <h1>Chapter 30: HTML Semantic Elements</h1>
-    <nav>
+    <header>
+        <h1>Chapter 30: HTML Semantic Elements</h1>
+    </header>
+    <nav id="TOC" class="contentsTable">
         <h2>Table Of Content</h2>
         <ul style="list-style-type: none;">
             <li><a href="#L1">What are Semantic Elements</a></li>
-            <li><a href="#Lesson 2">Semantic Elements in HTML</a></li>
-            <li><a href="#Lesson 3">HTML section Element</a></li>
-            <li><a href="#Section 4">HTML code for Computer Code</a></li>
-            <li><a href="#Section 5">HTML var for Variables</a></li>
-            <li><a href="#Chapter Summary">Chapter Summary</a></li>
+            <li><a href="#L2">Semantic Elements in HTML</a></li>
+            <li><a href="#L3">HTML section Element</a></li>
+            <li><a href="#L4">HTML article Element</a></li>
+            <li><a href="#L5">Nesting article in section or Vice Versa</a></li>
+            <li><a href="#L6">HTML header Element</a></li>
+            <li><a href="#L7">HTML footer Element</a></li>
+            <li><a href="#L8">HTML nav Element</a></li>
+            <li><a href="#L9">HTML aside Element</a></li>
+            <li><a href="#L10">HTML figure & figcaption Elements</a></li>
+            <li><a href="#SUM">Chapter Summary</a></li>
         </ul>
-    </nav>   
+    </nav> 
     <h3 id="L1">What are Seantic Elements?</h3>
     <dl>
         <dt>Semantic Elements:</dt>
@@ -31,10 +39,110 @@
     <img src="images/semanticElementsInHTML.png" alt="Semantic Elements in HTML" style="width: 831px; height: 315px;" class="center">
 
     <h3 id="L3">HTML <span style="font-family: 'Courier New', Courier, monospace;">section</span> Element</h3>
-    <p>Example</p>
-    <ol>
-        <li><a href="examples/htmlSectionElement.html">HTML Section Element Example</a></li>
-    </ol>
+    <p> 
+        Examples of where a <span class="element">section</span> element can be used.
+        <ul>
+            <li>Chapters</li>
+            <li>Introduction</li>
+            <li>News items</li>
+            <li>Contract Information</li>
+        </ul>
+    </p>
+    <p>
+        Lesson Example
+        <ul style="list-style-type: square;">
+            <li><a href="examples/htmlSectionElement.html" target="_blank">HTML Section Element Example</a></li>
+        </ul>
+    </p>
+    
+    <h3 id="L4">HTML <span style="font-family: 'Courier New', Courier, monospace;">article</span> Element</h3>
+    <p>
+        Examples of where a <span class="element">article</span> element can be used.
+        <ul style="list-style-type: square;">
+            <li>Forum posts</li>
+            <li>Block posts</li>
+            <li>User comments</li>
+            <li>Product Cards</li>
+            <li>Newspaper articles</li>
+        </ul>
+    </p>
+    <p>
+        Lesson Example
+        <p>Three articles with indepenent, self-contained content:</p>
+        <ul>
+            <li><a href="examples/htmlArticleElement.html" target="_blank">HTML Article Element Example</a></li>
+        </ul>
 
-    <h3>HTML <span style="font-family: 'Courier New', Courier, monospace;">article</span> Element</h3>
+        <p>Using CSS to style the <span class="element">article</span> element:</p>
+        <ul>
+            <li><a href="examples/htmlArticleElement2.html" target="_blank">HTML Article Element Example 2</a></li>
+        </ul>  
+    </p>
 
+    <h3 id="L5">Nesting <span class="element-font">article</span> in <span class="element-font">section</span> or Vise Versa</h3>
+    <img src="images/nestingArticleORSection.png" alt="Nesting Article or Section Elements" style="width: 1370px; height: 191px;">
+
+    <h3 id="L6"> HTML <span class="element-font">header</span> Element</h3>
+    <img src="images/headerElement.png" alt="HTML Header Element" style="width: 1120px; height: 233px;">
+    <p>
+        A header for an <span class="element-font">article</span>:
+        <ul>
+            <li><a href="examples/htmlHeaderElement" target="_blank"></a>Header Element Example</li>
+        </ul>
+    </p>
+
+    <h3 id="L7">HTML <span class="element-font">footer</span> Element</h3>
+    <img src="images/footerElement.png" alt="HTML Footer Element" style="width: 704px; height: 372px;">
+    <p>
+        Lesson Example
+        <ul>
+            <li><a href="examples/htmlFooterElement.html" target="_blank">HTML Footer Example</a></li>
+        </ul>
+    </p>
+    
+    <h3 id="L8">HTML <span class="element-font">nav</span> Element</h3>
+    <p>The <span>nav</span> element defines a set of navigation links</p>
+    <img src="images/navElementNotice.png" alt="HTML nav Element Notice" style="width: 1826px; height: 143px;">
+    <p>
+        Lesson Example:
+        <ul>
+            <li><a href="examples/htmlNavElement.html" target="_blank">HTML Nav Element Example</a></li>
+        </ul>
+    </p>
+    
+    <h3 id="L9">HTML <span class="element-font">aside</span> Element</h3>
+    <p>The <span class="element">aside</span> element defines some content aside fromt eh content it is plased in (like a sidebar)</p>
+    <p>the <span class="element">aside</span> content should be indirectly related tot he surrounding content</p>
+
+    <p>
+        Lesson Example:
+        <p> Display some content aside from the content it is placed in:</p>
+        <ul>
+            <li><a href="examples/htmlAsideElement.html" target="_blank">HTML Aside Element Example</a></li>
+        </ul>
+
+        <p>Use CSS to style the <span class="element">aside</span> element:</p>
+        <ul>
+            <li><a href="examples/htmlAsideElement2.html" target="_blank">HTML Aside Element Example 2</a></li>
+        </ul>
+    </p>
+
+    <h3 id="L10">HTML <span class="element-font">figure</span> and <span class="element-font">figcaption</span> Elements</h3>
+    <p>The <span class="element">figure</span> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</p>
+    <p>The <span class="element">figcaption</span> tag defines a caption for a <span class="element">figure</span> element. The <span class="element">figcaption</span> element can be placed as the first or last child of a <span class="element">figure</span> element.</p>
+    <p>The <span class="element">img</span> element defines the actual image/illustration.</p>
+    <p>
+        Lesson Example
+        <ul>
+            <li><a href="examples/htmlFigureElements.html" target="_blank">HTML Figure Example</a></li>
+        </ul>
+    </p>
+
+    <h3 id="SUM">Chapter Sumary</h3>
+    <img src="images/semanticSummary.png" alt="Sematic Summary" style="width: 608px;height: 430px;">
+    <br>
+    <br>
+    <Footer>
+        Return to the beginning of chapter:
+        <a href="#TOC">Table of Contents</a>
+    </Footer>

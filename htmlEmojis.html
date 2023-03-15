@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Chapter xx: </title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/masterStyle.css">
+    <meta name="author" content="Tre Williams">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width", initial-scale="1.0">
+</head>
+<body>
+    <header>
+        <h1>Chapter 34: HTML Emojis </h1>
+    </header>
+    <nav id="TOC" class="contentsTable">
+        <h2>Table Of Content</h2>
+        <ul style="list-style-type: none;">
+            <li><a href="#L1">What are Emojis?</a></li>
+            <li><a href="#L2">The HTML charset Attribute</a></li>
+            <li><a href="#L3">UTF-8 Characters</a></li>
+            <li><a href="#L4">Emoji Characters</a></li>
+            <li><a href="#L5">Other Emoji Symbols in UTF-8</a></li>
+        </ul>
+    </nav> 
+
+    <h3 id="L1">What are Emojis?</h3>
+    <p>
+        Bruh... You should know what they are. Just in case you were living under a rock.
+        <br>
+        Emojis are characters from the UTF-8 character set: 😄 😍 💗 (Shows as Emojis in VScode)
+        <!--
+            This was a test to see if the page will show the Emojis[JOY HEARTEYES HEART] as they are visible in VScode.
+            Result: Success 
+        -->
+    </p>
+    <p class="notice">UTF-8 covers almost all of the characters and symbols in the world</p>
+
+    <h3 id="L2">The html <span class="element-font">charset</span> attribute</h3>
+    <p>
+        To display an HTML page correctly, a web browser must know the character set used in the page. 
+        <br>
+        This is specified in the <span class="element">&#60;meta&#62;</span> tag.
+    </p>
+    <p class="notice">
+        If not specified, UTF-8 is the default character set in HTML.
+    </p>
+
+    <h3 id="L3">UTF-8 Characters</h3>
+    <p>
+        Lesson Example
+        <ol>
+            <li>I will display A B C <span style="font-style: italic;">(this was typed)</span></li>
+            <li> I will display &#65; &#66; &#67;<span style="font-style: italic;"> (this used UTF-8 code)</span></li>
+        </ol>
+    </p>
+
+    <h3 id="L4">Emoji Characters</h3>
+    <p>
+        Lesson Example
+        <h4>My First Emoji</h4>
+        <p>&#128512;</p>
+    </p>
+    <br>
+    <p>
+        Lesson Exammple 2
+        <h4> Sized Emojis</h4>
+        <p style="font-size: 48px;">&#128512; &#128516; &#128525; &#128151;</p>
+    </p>
+
+    <h3 id="L5"> Other Emoji Sysmbos in UTF-8</h3>
+    <img src="images/otherEmojiSymbols.png" alt="Other Emoji Symbols" width="489px" height="535px">
+    <p class="notice"><a href="https://www.w3schools.com/charsets/ref_emoji.asp" target="_blank"> HTML Emoji Reference</a></p>
+
+    <br>
+    <br>
+    <Footer>
+        Return to the beginning of chapter:
+        <a href="#TOC">Table of Contents</a>
+    </Footer>

@@ -1,5 +1,5 @@
-h1 {
-    font-size: 300%;
+header {
+    font-size: 300%vw;
     color: green;
     text-align: center;
     }
@@ -19,4 +19,20 @@ dt {
     color: crimson;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+}
+.element-font {
+    font-family: 'Courier New', Courier, monospace;
+}
+.notice {
+    background-color: rgb(247, 247, 196);
+    padding: 10px;
+}
+.contentsTable {
+    list-style-type: none;
+    background-color: lightseagreen;
+    padding: 15px;
+}
+footer {
+    background-color: lightseagreen;
+    padding: 15px;
 }
