@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Chapter 37: HTML Versus XHTML </title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/masterStyle.css">
+    <meta name="author" content="Tre Williams">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width", initial-scale="1.0">
+</head>
+<body>
+    <header>
+        <h1>Chapter 37: HTML Versus XHTML </h1>
+    </header>
+    <nav id="TOC" class="contentsTable">
+        <h2>Table Of Content</h2>
+        <ul style="list-style-type: none;">
+            <li><a href="#L1">What is XHTML?</a></li>
+            <li><a href="#L2">Why XHTML?</a></li>
+            <li><a href="#L3">The Most Important Differences from HTML</a></li>
+        </ul>
+    </nav> 
+
+    <!-- Begin Writing your code here! -->
+    <h3 id="L1">What is XHTML?</h3>
+    <ul style="list-style-type: square;">
+        <li>XHTML stands for EXtensible HyperText Markup Language</li>
+        <li>XHTML is a stricter, more XML-based version of HTML</li> 
+        <li>XHTML is HTML defined as an XML application</li>    
+        <li>XHTML is supported by all major browsers</li>    
+    </ul>
+
+
+    <h3 id="L2">Why XHTML?</h3>
+    <p>
+        XML is a markup language where all documents must be marked up correctly (be "well-formed").
+        <br>
+        <br>
+        XHTML was developed to make HTML more extensible and flexible to work with other data formats (such as XML). In addition, browsers ignore errors in HTML pages, and try to display the website even if it has some errors in the markup. So XHTML comes with a much stricter error handling.
+    </p>
+
+    <h3>The Most Important Differences from HTML</h3>
+    <ul style="list-style-type: square;">
+        <li><span class="element">&#60;!DOCTYPE&#62;</span> is <strong>mandatory</strong></li>
+        <li>The <span class="element-font">xmlns</span> attribute in <span class="element">&#60;html&#62;</span> is <strong>mandatory</strong></li>
+        <li><span class="element">&#60;html&#62;</span>, <span class="element">&#60;head&#62;</span>, <span class="element">&#60;title&#62;</span>, and <span class="element">&#60;body&#62;</span> are <strong>mandatory</strong></li>
+        <li>Elements must always be <strong>properly nested</strong></li>
+        <li>Elements must always be <strong>closed</strong></li>
+        <li>Elements must always be in <strong>lowercase</strong></li>
+        <li>Attribute names must always be in <strong>lowercase</strong></li>
+        <li>Attribute values must always be <strong>quoted</strong></li>
+        <li>Attribute minimization is <strong>forbidden</strong></li>
+    </ul>
+    <br>
+    <Footer>
+        Return to the beginning of chapter:
+        <a href="#TOC">Table of Contents</a>
+    </Footer>
