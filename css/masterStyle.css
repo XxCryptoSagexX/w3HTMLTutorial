@@ -1,3 +1,13 @@
+/*
+    TODO
+        • create | .element class that will act as style for when you call an element
+        • remove | .element-font class as this is redundant from .element class 
+        • create | .attribute class that will act as style for when you call an attribute
+
+    NOTE
+        • Attributes are the tags that go inside the element. 
+*/
+
 header {
     font-size: 300%vw;
     color: green;
@@ -15,10 +25,23 @@ img {
 dt {
     font-weight: bold ;
 }
+code {
+    background-color: rgba(222,222,222,0.1);
+}
 .element {
     color: crimson;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+    padding-left: 4px;
+    padding-right: 4px;
+    box-sizing: inherit;
+}
+code.element {
+    color: crimson;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: rgba(222,222,222,0.1);
+    box-sizing: inherit;
 }
 .element-font {
     font-family: 'Courier New', Courier, monospace;

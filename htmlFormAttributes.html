@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Chapter 39: HTML Form Attributes </title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/masterStyle.css">
+    <meta name="author" content="Tre Williams">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width", initial-scale="1.0">
+</head>
+<body>
+    <header>
+        <h1>Chapter 39: HTML Form Attributes </h1>
+    </header>
+    <nav id="TOC" class="contentsTable">
+        <h2>Table Of Content</h2>
+        <ul style="list-style-type: none;">
+            <li><a href="#L1">The Action Attribute</a></li>
+            <li><a href="#L2">The Target Attribute</a></li>
+            <li><a href="#L3">The Method Attribute</a></li>
+            <li><a href="#L4">The Autocomplete Attribute</a></li>
+            <li><a href="#L5">The Novalidate Attribute</a></li>
+            <li><a href="#L6">  </a></li>
+            <li><a href="#L7">  </a></li>
+            <li><a href="#L8">  </a></li>
+            <li><a href="#L9">  </a></li>
+            <li><a href="#L10">  </a></li>
+            <li><a href="#SUM">Chapter Summary</a></li>
+        </ul>
+    </nav> 
+
+    <h3 id="L1">The Action Attribute</h3>
+    <p>The <code class="element">action</code> attribute defines the action to be performed when the form is submitted.</p>
+    <p>Usually, the form data is sent to a file on the server when the user clicks on the submit button.</p>
+    <form action="/action_page.php">
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">    
+    </form>
+    <p class="notice"><br><strong>Note:</strong> the script(PHP File) is not created, therefor the "how to handle the submitted data" is currently not functioning. 
+    <br><br>
+     If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".
+    <br><br>
+    </p>
+
+    <h3 id="L2">The Target Attribute</h3>
+    <img src="images/forms_targetAttributeList.png" alt="Forms: Target Attribute List" width="1135px" height="268px">
+
+    <h3 id="L3">The Method Attribute</h3>
+    <h4> Example: GET Method</h4>
+    <img src="images/forms_methodAttributeGET.png" alt="Method Attribute: GET" width="1080px"  height="242px">
+    <img src="images/forms_methodAttributeGet-Submit.png" alt="Method Attribute: Get - Submitted" width="856px"  height="306px">
+
+    <h4>Example: POST Method</h4>
+    <img src="images/forms_methodAttributePOST.png" alt="Method Attribute: POST" width="1114px"  height="235px">
+    <img src="images/forms_methodAttributePOST-Submit.png" alt="Method Attribute: POST - Submitted" width="851px"  height="307px">
+    <p><strong>Notes on GET:</strong>
+        <ul>
+            <li>Appends the form data to the URL, in name/value pairs</li>
+            <li>NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</li>
+            <li>The length of a URL is limited (2048 characters)</li>
+            <li>Useful for form submissions where a user wants to bookmark the result</li>
+            <li>GET is good for non-secure data, like query strings in Google</li>
+        </ul>
+    </p>
+    <p><strong>Notes on POST:</strong>
+        <ul>
+            <li>Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)</li>
+            <li>POST has no size limitations, and can be used to send large amounts of data.</li>
+            <li>Form submissions with POST cannot be bookmarked</li>
+        </ul>
+    </p>
+
+    <h3 id="L4">The Autocomplete Attribute</h3>
+    <img src="images/forms_autocompleteAttribute.png" alt="Autocomplete Form." width="1091px" height="240px">
+
+    <h3 id="L5">The Novalidate Attribute</h3>
+    <img src="images/forms_novalidateAttribute.png" alt="Novalidate Form." width="1117px" height="234px">
+
+    <h3>Chapter Summary: List of All &#60;form&#62; Attributes</h3>
+    <img src="images/formAttributesList.png" alt="Form Attribute List" width="931px" height="281px">
+    
+
+    <br>
+    <br>
+    <Footer>
+        Return to the beginning of chapter:
+        <a href="#TOC">Table of Contents</a>
+    </Footer>
+
+</body>
+</html>

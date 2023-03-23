@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Chapter 38: HTML Forms </title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/masterStyle.css">
+    <meta name="author" content="Tre Williams">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width", initial-scale="1.0">
+</head>
+<body>
+    <header>
+        <h1>Chapter 38: HTML Forms </h1>
+    </header>
+    <nav id="TOC" class="contentsTable">
+        <h2>Table Of Content</h2>
+        <ul style="list-style-type: none;">
+            <li><a href="#L1">HTML Forms</a></li>
+            <li><a href="#L2">The &#60;form&#62; element</a></li>
+            <li><a href="#L3">The &#60;input&#62; element</a></li>
+            <li><a href="#L4">Text Fields</a></li>
+            <li><a href="#L5">The &#60;label&#62; element</a></li>
+            <li><a href="#L6">Radio Buttons</a></li>
+            <li><a href="#L7">Checkboxes</a></li>
+            <li><a href="#L8">Submit Button</a></li>
+            <li><a href="#L9">The <span class="element-font">Name</span> Attribute for &#60;input&#62;</a></li>
+        </ul>
+    </nav> 
+
+    <h3 id="L1">HTML Forms</h3>
+    <p> An HTML form is used to collect user input. The user input is ofter sent to a server for processing.</p>
+    <form action="/action_page.php">
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="submit">    
+    </form>
+    <p class="notice"><br><strong>Note:</strong> the script(PHP File) is not created, therefor the "how to handle the submitted data" is currently not functioning. <br><br>
+    If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".
+    <br><br>
+    </p>
+
+    <h3 id="L2"> The <span class="element-font">&#60;form&#62;</span> element</h3>
+    <img src="images/formElement.png" alt="Form Element Notation" width="1028px" height="254px">
+
+    <h3 id="L3"> The <span class="element-font">&#60;input&#62;</span> element</h3>
+    <img src="images/inputElement.png" alt="Input Element Notation" width="808px"  height="324px">
+
+    <h3 id="L4">Text Fields</h3>
+    <p>The <span class="element"> &#60;input type="text"&#62;</span> defines a single-line input field for text input</p>
+    <form>
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    </form>
+
+    <h3 id="L5">The<span class="element-font"> &#60;label&#62;</span> element </h3>
+    <img src="images/labelElement.png" alt="Label Element Notation" width="1249px" height="209px">
+
+    <h3 id="L6">Radio Buttons</h3>
+    <p>Choose your favorite Web Language</p>
+    <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </form>
+
+    <h3 id="L7">Checkboxes</h3>
+    <form>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3 id="L8">Submit Button</h3>
+    <form action="/action_page.php">
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="submit">    
+    </form>
+    <p class="notice"><br><strong>Note:</strong> the script(PHP File) is not created, therefor the "how to handle the submitted data" is currently not functioning. <br><br>
+    If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".
+    <br><br>
+
+    <h3 id="L9">The Name Attribute for &#60;input&#62;</h3>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" value="John"><br><br>
+        <input type="submit" value="Submit">
+    </form>   
+    <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>  
+    <p class="notice">Notice that the value of the "First name" field will not be submitted, because the input element does not have a name attribute.</p>
+
+    <br>
+    <br>
+    <Footer>
+        Return to the beginning of chapter:
+        <a href="#TOC">Table of Contents</a>
+    </Footer>
+</body>
+</html>

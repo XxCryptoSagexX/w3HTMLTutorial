@@ -46,7 +46,9 @@ Template:
     
     <br>
     <br>
-    <Footer>
+    <footer>
         Return to the beginning of chapter:
         <a href="#TOC">Table of Contents</a>
-    </Footer>
+    </footer>
+</body>
+</html>
